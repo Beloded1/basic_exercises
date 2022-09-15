@@ -20,15 +20,7 @@ def countVowels(word):
          total += 1
    return total
     
-print(countVowels(word))    # Первый способ.
-
-
-def count_vowels_var2(word):
-  return sum([1 for x in word.lower() if x in 'аеоиыуэ'])
-
-print(count_vowels_var2(word))  # Второй способ.
-
-        
+print(countVowels(word))    
 
 
 # Вывести количество слов в предложении
@@ -43,7 +35,7 @@ letter = sentence.split()
 print(letter[0][0])
 print(letter[1][0])
 print(letter[2])
-print(letter[3][0])         # Должен быть более рациональный метод вывода через функцию. Пока не сообразил как.
+print(letter[3][0])         
 
 
 

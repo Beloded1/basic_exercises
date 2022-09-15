@@ -19,14 +19,9 @@ for student in students:
         names[student['first_name']] = 1
     else:
         names[student['first_name']] += 1
-for name, count in names.items():               # Первый вариант.
+for name, count in names.items():              
     print(f'{name}: {count}')
 
-
-names = [s['first_name'] for s in students]
-
-for name in set(names):                         # Второй вариант.
-    print(f'{name}: {names.count(name)}')
 
 # Задание 2
 # Дан список учеников, нужно вывести самое часто повторящееся имя
@@ -114,7 +109,7 @@ for clas in school:
 
     print("Класс {}: девочки {}, мальчики {} ".format(clas["class"],
                                                          girl_count,
-                                                         boys_count)) #Как записать print в формате f-строк???
+                                                         boys_count)) 
 
 # Задание 5
 # По информации о учениках разных классов нужно найти класс, в котором больше всего девочек и больше всего мальчиков
